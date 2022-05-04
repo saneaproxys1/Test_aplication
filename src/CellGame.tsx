@@ -1,3 +1,4 @@
+import styles from '../src/CellGame.module.css';
 
 interface IProps {
     id: number;
@@ -7,7 +8,9 @@ interface IProps {
 const CellGame = (props: IProps) => {
     return (
         <>
-            example {props.id} 
+            <div className={styles.container}>
+                {props.id}
+            </div>
         </>
     )
 }
